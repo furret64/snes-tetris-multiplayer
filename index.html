@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Play SMW2Players</title>
-    <script src="https://www.emulatorjs.com/loader.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Emulator</title>
 </head>
 <body>
-    <div id="emulator"></div>
-    <script>
-        EJS_player = '#emulator';
-        EJS_core = 'snes';
+    <div style="width:640px;height:480px;max-width:100%">
+        <div id="game"></div>
+    </div>
+    <script type="text/javascript">
+        EJS_player = '#game';
         EJS_gameUrl = 'https://raw.githubusercontent.com/furret64/thing/main/smw2players.smc';
+        EJS_core = 'bsnes';
     </script>
+    <script src="https://www.emulatorjs.com/loader.js"></script>
 </body>
 </html>
